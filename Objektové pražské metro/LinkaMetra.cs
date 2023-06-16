@@ -4,6 +4,7 @@ using System.Diagnostics.SymbolStore;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Spectre.Console;
 
 namespace Objektové_pražské_metro
 {
@@ -75,8 +76,10 @@ namespace Objektové_pražské_metro
             Console.WriteLine("---------------------");
             int dobaCesty = (indexPrvni - indexDruhy) * -2;
             Console.WriteLine("Doba cesty: +-" + dobaCesty + " Minut/y");
-
-
+        }
+        public static void Main(string[] args)
+        {
+            AnsiConsole.Markup("[underline red]Hello[/]World!");
         }
     }
 }

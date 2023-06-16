@@ -1,5 +1,6 @@
 ﻿
 
+using Spectre.Console;
 using Objektové_pražské_metro;
 
 string[] LinkaA = { "Nemocnice Motol", "Petřiny", "Nádraží Veleslavín", "Bořislavka", "Dejvická", "Hradčanská", "Malostranská", "Můstek", "Muzeum",
@@ -14,7 +15,10 @@ string[] LinkaC = {"Letňany", "Prosek", "Sřížkov", "Ládví", "Kobylisy", "n
 
 string[] LinkaD = { "Náměstí Míru", "Náměstí Bří Synků", "Olbrachtova", "Nádraží Krč", "Nemocnice Krč", "Nové Dvory", "Libuš", "Písnice", "Depo Písnice" };
 
-Console.WriteLine("Zadej linku kterou chceš využít: ");
+
+AnsiConsole.Markup("[underline red]Hello[/] World!");
+
+Console.WriteLine("\nZadej linku kterou chceš využít: ");
 string volba = Console.ReadLine();
 if(volba == "A")
 {
